@@ -1,0 +1,690 @@
+/*=======================================================================
+	
+	Item Name 		|		Symp - Responsive One Page VCard/Resume Template
+	
+	Author Name		|		Noman Ali Samejo
+	
+-------------------------------------------------------------------------
+	CSS Structure
+-------------------------------------------------------------------------
+	
+	01- General CSS
+	02- Preloader
+	03- Front Section
+	04- About Section
+	05- Resume Section
+	06- Services Section
+	07- Blog Section
+	08- Portfolio Section
+	09- Contact Section
+	10- Work Page
+	11- Single Post Page
+	12- Responsive CSS
+	
+	*Colors are in separate files.
+	
+=======================================================================*/
+
+
+/*Importing Google Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,600,300|Playfair+Display:700italic,400italic|Crimson+Text:400italic,600italic|Open+Sans:400,700);
+
+/*=======================================================================
+	General CSS
+=======================================================================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: bold;
+    font-family: Raleway, sans-serif;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BBB;
+    border: solid 2px #FFF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+::-moz-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: #FFF;
+}
+
+::-moz-scrollbar-thumb {
+    background: #BBB;
+    border: solid 2px #FFF;
+}
+
+::-moz-scrollbar-thumb:hover {
+    background: #888;
+}
+
+img {
+    max-width: 100%;
+}
+
+.parallax {
+    background-size: cover;
+}
+
+body.section-show {
+    overflow: hidden;
+}
+
+body a.close-btn,
+body.section-show .close-btn {
+    opacity: 1;
+    z-index: 100;
+    -webkit-transition: opacity .4s 1.2s ease, background .3s ease;
+    -moz-transition: opacity .4s 1.2s ease, background .3s ease;
+    transition: opacity .4s 1.2s ease, background .3s ease;
+    overflow: hidden;
+}
+
+.close-btn {
+    position: fixed;
+    height: 64px;
+    width: 64px;
+    cursor: pointer;
+    display: block;
+    top: 18px;
+    right: 18px;
+    opacity: 0;
+    z-index: -99;
+}
+
+.close-btn>span {
+    height: 3px;
+    width: 40px;
+    background: #BBB;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px;
+    margin-top: -1.5px;
+}
+
+.close-btn>span:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: inherit;
+    background: #B7A389;
+}
+
+.close-btn>span:nth-of-type(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.close-btn>span:nth-of-type(2) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.close-btn>span:nth-of-type(1):before {
+    left: 0;
+}
+
+.close-btn>span:nth-of-type(2):before {
+    right: 0;
+}
+
+.close-btn:hover>span {
+    background: transparent;
+}
+
+.close-btn:hover>span:before {
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+    width: 100%;
+}
+
+.close-btn:hover>span:nth-of-type(2):before {
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    letter-spacing: 6px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+
+.section-header p {
+    margin-top: 30px;
+    line-height: 1.7em;
+    color: #8A8A8A;
+    font-size: 16px;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+.bg-lightgray {
+    background: #F5F5F5;
+}
+
+
+/*=======================================================================
+	Preloader
+=======================================================================*/
+
+
+/*=======================================================================
+	Front Section
+=======================================================================*/
+
+
+/*=======================================================================
+	About Section
+=======================================================================*/
+
+.about-section {
+    padding-top: 0;
+}
+
+.basic-info {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.basic-info .section-header {
+    margin-bottom: 80px;
+}
+
+.about-info>p {
+    line-height: 1.8em;
+    margin-top: -.4em;
+}
+
+.about-person-img {
+    text-align: center;
+}
+
+.about-person-img>img {
+    max-width: 100%;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.info-list>li {
+    float: left;
+    width: 25%;
+    margin-bottom: 60px;
+    margin-right: -100px;
+}
+
+
+/*=======================================================================
+	Resume Section
+=======================================================================*/
+
+
+/*=======================================================================
+	Services Section
+=======================================================================*/
+
+
+/*=======================================================================
+	Blog Section
+=======================================================================*/
+
+
+/*=======================================================================
+	Portfolio Section
+=======================================================================*/
+
+.portfolio-block {
+    padding-bottom: 100px;
+}
+
+.portfolio-block .section-header {
+    margin-bottom: 45px;
+}
+
+.portfolio-items>.item {
+    width: 33.333%;
+    position: relative;
+}
+
+@media(max-width:992px) {
+    .portfolio-items>.item {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    .portfolio-items>.item {
+        width: 100%;
+    }
+}
+
+.portfolio-items>.item>.inner>img {
+    width: 100%;
+}
+
+.portfolio-items>.item>.inner {
+    position: relative;
+}
+
+.portfolio-items>.item>.inner:hover>.caption {
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-items>.item>.inner>.caption>.caption-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 75%;
+}
+
+.portfolio-items>.item>.inner>.caption>.caption-inner>h4 {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 30px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    transform: translateY(15px);
+    -webkit-transition: all .3s .1s ease;
+    -moz-transition: all .3s .1s ease;
+    transition: all .3s .1s ease;
+}
+
+.portfolio-items>.item>.inner:hover>.caption>.caption-inner>h4 {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-items>.item>.inner>.caption>.caption-inner>.links {
+    list-style: none;
+    color: #FFF;
+}
+
+.portfolio-items>.item>.inner>.caption>.caption-inner>.links>li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin: 0 11px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(15px);
+    -moz-transform: translateY(15px);
+    -ms-transform: translateY(15px);
+    -o-transform: translateY(15px);
+    transform: translateY(15px);
+    -webkit-transition: all .3s .2s ease;
+    -moz-transition: all .3s .2s ease;
+    transition: all .3s .2s ease;
+}
+
+.portfolio-items>.item>.inner>.caption>.caption-inner>.links>li:nth-of-type(2) {
+    -webkit-transition-delay: .3s;
+    -moz-transition-delay: .3s;
+    transition-delay: .3s;
+}
+
+.portfolio-items>.item>.inner:hover>.caption>.caption-inner>.links>li {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio-items>.item>.inner>.caption>.caption-inner>.links>li>a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 0;
+    border: solid 1px #FFF;
+    color: #FFF;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-items>.item>.inner>.caption>.caption-inner>.links>li>a>i {
+    display: block;
+    height: inherit;
+    width: inherit;
+    line-height: inherit;
+    vertical-align: middle;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.portfolio-items>.item>.inner>.caption>.caption-inner>.links>li>a>i:before {
+    font-size: 16px;
+    vertical-align: middle;
+    line-height: 1em;
+}
+
+.portfolio-items>.item>.inner>.caption>.caption-inner>.links>li>a:hover {
+    background: #FFF;
+    background: rgba(255, 255, 255, .9);
+    color: #333;
+}
+
+#portfolio-filters {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+#portfolio-filters>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+#portfolio-filters>ul>li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    font-size: 14px;
+    padding: 0 26px;
+    position: relative;
+}
+
+#portfolio-filters>ul>li:last-of-type:after {
+    display: none;
+}
+
+#portfolio-filters>ul>li:after {
+    content: ' ';
+    position: absolute;
+    right: -9px;
+    top: 50%;
+    margin-top: -3px;
+    height: 6px;
+    width: 6px;
+    border: solid 1px #7867b4;
+    transform: rotate(45deg);
+}
+
+#portfolio-filters>ul>li>a {
+    display: block;
+    color: #999;
+    text-decoration: none;
+}
+
+#portfolio-filters>ul>li>a:hover,
+#portfolio-filters>ul>li>a.active {
+    color: #333;
+}
+
+#portfolio-filters>ul>li>a.active {
+    text-decoration: line-through;
+}
+
+
+/*=======================================================================
+	Contact Section
+=======================================================================*/
+
+
+/*=======================================================================
+	Work Page
+=======================================================================*/
+
+.single-work {
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+
+.work-info {
+    list-style: none;
+    margin: 0;
+    margin-top: 50px;
+}
+
+@media(min-width:992px) {
+    .work-info {
+        padding-left: 25px;
+        margin-top: 0;
+    }
+}
+
+.work-info>li {
+    margin-bottom: 55px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.work-info>li>h4>i {
+    margin-right: 8px;
+}
+
+.work-info>li>h4 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.work-info>li>p {
+    color: #777;
+}
+
+.work-content>.block {
+    margin-top: 60px;
+}
+
+.work-content>.block h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.work-content>.block p {
+    line-height: 1.9em;
+}
+
+
+/*=======================================================================
+	Single Post Page
+=======================================================================*/
+
+
+/*=======================================================================
+	Responsive CSS
+=======================================================================*/
+
+@media (max-width:992px) {
+    .about-person-img {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .info-list>li {
+        width: 30%;
+        margin-right: -50px;
+    }
+    .front-section {
+        padding-bottom: 110px;
+    }
+    .front-heading>h2 {
+        font-size: 50px;
+    }
+    .front-person-img {
+        height: 360px;
+        width: 360px;
+    }
+    .front-person-img>img {
+        -webkit-transform: rotate(-40deg) translateY(45px);
+        -moz-transform: rotate(-45deg) translateY(45px);
+        -ms-transform: rotate(-45deg) translateY(45px);
+        -o-transform: rotate(-45deg) translateY(45px);
+        transform: rotate(-45deg) translateY(45px);
+    }
+    .front-person-links {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin-top: 110px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 0;
+        width: auto;
+        height: auto;
+    }
+    .front-person-links>ul {
+        top: 0;
+        left: auto;
+        position: relative;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .front-person-links>ul>li {
+        margin-bottom: 1px;
+        display: block;
+    }
+    .front-person-links>ul>li>a:before,
+    .front-person-links>ul>li>a:after {
+        position: absolute;
+        left: 0;
+        height: 2px;
+        top: 50%;
+        margin-top: -1px;
+        display: block;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        opacity: .5;
+        display: none;
+    }
+    .front-person-links>ul>li>a:after {
+        left: auto;
+        right: 0;
+    }
+    .front-person-links>ul>li>a:hover:before {
+        width: 15px;
+    }
+    .front-person-links>ul>li>a {
+        text-align: center;
+        padding: 22px 48px;
+        display: block;
+        font-size: 22px;
+        letter-spacing: 2px;
+        text-transform: none;
+    }
+    .front-person-titles {
+        margin-top: 125px;
+        transform: none;
+        text-align: center;
+        width: 80%;
+        height: auto;
+        opacity: 1;
+    }
+    .front-person-titles>span {
+        position: relative;
+        transform: none !important;
+        display: block;
+        margin: 25px 0;
+        letter-spacing: 10px;
+        font-size: 16px;
+        text-transform: uppercase;
+        top: auto !important;
+        left: auto !important;
+        bottom: auto !important;
+    }
+    .front-heading {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width:768px) {
+    .front-person-links {
+        margin-top: 65px;
+    }
+    .front-person-img {
+        width: 65%;
+        padding-top: 65%;
+        height: 0;
+        margin-top: 120px;
+    }
+    .front-person-img>img {
+        -webkit-transform: rotate(-45deg) translateY(45px);
+        -moz-transform: rotate(-45deg) translateY(45px);
+        -ms-transform: rotate(-45deg) translateY(45px);
+        -o-transform: rotate(-45deg) translateY(45px);
+        transform: rotate(-45deg) translateY(100px);
+        position: absolute;
+        bottom: 0;
+        left: -40px;
+    }
+}

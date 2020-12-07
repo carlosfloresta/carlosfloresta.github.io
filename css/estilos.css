@@ -1,0 +1,253 @@
+
+.imagem{
+   
+    border-radius: 200px;
+    width: 230px;
+    height: 230px; background-image: url(..//img/carlos230x230.png);
+    background-position: center center;
+    background-color: #C0C0C0;
+   
+    border: 1px solid #000;
+    
+ 
+    }
+    
+    
+   
+   
+    .banner {
+/*      position: relative;*/
+      z-index: 5;
+      height: 100%;
+      width: 100%;
+/*      color: #fff;
+      font-size: 400%;
+     padding: 1px;*/
+    }
+
+    .banner .bg {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    
+      opacity: .1;
+        width: 100%;
+        height: 100%;
+        
+        text-align:center;
+        color:#fff;background-image:url(../img/codigo.jpg);
+        background-repeat: repeat;
+/*        background-attachment:scroll;*/
+        background-position:center center;
+        -webkit-background-size:cover;
+        -moz-background-size:cover;
+        -o-background-size:cover;
+        background-size:cover
+    }
+    
+    #bt1 {
+	display: inline-block;
+	position: absolute;
+	padding: 2% 2%;
+        font-weight:bold !important;
+     font-size: 150% !important;
+     
+/*     padding: 1.2rem 2.4rem;*/
+   
+     color: #424242;
+     
+    border:2px solid #424242; 
+    background-color: transparent;
+    border-radius: 20px;
+    
+     top: 30%;
+    left: 60%;
+    
+
+    
+  
+    
+}
+#bt1:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .2s ease;
+}
+#bt1:hover:after {
+	width: 100%;
+	background: #5858FA;
+}
+
+
+#bt2 {
+	display: inline-block;
+	position: absolute;
+	padding: 2% 2%;
+        font-weight:bold !important;
+     font-size: 150% !important;
+  
+     
+    border:2px solid #424242; 
+    background-color: transparent;
+    border-radius: 20px;
+    color: #424242;
+    
+     top: 50%;
+    left: 60%;
+    
+right: 20%
+    
+  
+    
+}
+#bt2:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .2s ease;
+}
+#bt2:hover:after {
+	width: 100%;
+	background: #5858FA;
+}
+
+
+
+
+.texto{
+    position: absolute;
+   top:40%;
+  
+   left:5%;
+   right: 50%;
+   margin-top: -3%;
+   
+  
+   
+	
+}
+
+#texto{
+    line-height: 2rem;
+  font-weight: 400;
+  margin: 2.5rem 0;
+  max-width: 50vw;
+     font-size: 130%;
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Helvetica Neue", Helvetica, sans-serif;
+     color: #4b4545;
+}
+
+.imagem02{
+    
+    
+       
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+        
+}
+
+.imagem02:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+
+.imagem03{
+    
+    position: relative;
+    top:50%;
+    left:80%;
+     max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.imagem03:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.imagem04{
+    
+    position: relative;
+    top:50%;
+    left:90%;
+     max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.imagem04:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+.textoImagem02{
+    
+     position: relative;
+    top:60%;
+    left:70%;
+        max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    
+}
+
+
+
+
+	@media only screen and (max-width: 500px) {
+    .mobile-hide{ display: none !important; }
+    }
+    @media only screen and (max-width: 500px) {
+    .mobile{ display: inline !important; }
+    }
+    @media only screen and (min-width: 500px) {
+    .desktop-hide{ display: none !important; }
+    }
+    
+    .social{position:fixed; z-index: 9999; bottom:0%;  padding: 1%;  margin-top: -12%; left:0%; top:100%;  width:100%; height:100%; background:#D8D8D8;}
+
+
+
+
+
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{
+display:none;
+}
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+

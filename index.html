@@ -1,0 +1,191 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio">
+    <meta name="author" content="Carlos Henrique Costa Floresta">
+    <meta name="theme-color" content="#303F9F">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
+    <link rel="shortcut icon" href="img/carlos_1.ico">
+    <title>Portfolio Carlos</title>
+
+
+
+    <link rel="stylesheet" href="home/css/bootstrap.min.css">
+    <link rel="stylesheet" href="home/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="home/css/templatemo-style.css">
+
+
+</head>
+
+<body>
+
+
+
+
+    <nav class="nav">
+        <div id="burger" class="burger">
+            <div class="burger__patty"></div>
+        </div>
+
+        <ul id="nav_list" class="nav__list ">
+
+            <li class="nav__item">
+                <div class="img-margem">
+                    <a href="sobre.html" class="nav__link c-yellow scrolly"><img width="80%" src="img/perfil.png" alt=""></a>
+                    <div class="name">Sobre Mim</div>
+                </div>
+
+            </li>
+            <li class="nav__item">
+                <div class="img-margem">
+                    <a href="portfolio.html" class="nav__link c-red"><img width="80%" src="img/portfolio.png" alt=""></a>
+                    <div class="name">Projetos</div>
+                </div>
+
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+    <section class="panel b-blue" id="1">
+        <div id="lua">
+            <div class="switch_box box_3">
+                <div class="toggle_switch">
+                    <input id="check" name="theme" type="checkbox" class="switch_3">
+                    <svg class="checkbox" xmlns="http://www.w3.org/2000/svg" style="isolation:isolate" viewBox="0 0 168 80">
+                 <path class="outer-ring" d="M41.534 9h88.932c17.51 0 31.724 13.658 31.724 30.482 0 16.823-14.215 30.48-31.724 30.48H41.534c-17.51 0-31.724-13.657-31.724-30.48C9.81 22.658 24.025 9 41.534 9z" fill="none" stroke="#233043" stroke-width="3" stroke-linecap="square" stroke-miterlimit="3"/>
+                 <path class="is_checked" d="M17 39.482c0-12.694 10.306-23 23-23s23 10.306 23 23-10.306 23-23 23-23-10.306-23-23z"/>
+                <path class="is_unchecked" d="M132.77 22.348c7.705 10.695 5.286 25.617-5.417 33.327-2.567 1.85-5.38 3.116-8.288 3.812 7.977 5.03 18.54 5.024 26.668-.83 10.695-7.706 13.122-22.634 5.418-33.33-5.855-8.127-15.88-11.474-25.04-9.23 2.538 1.582 4.806 3.676 6.66 6.25z"/>
+              </svg>
+                </div>
+            </div>
+
+        </div>
+
+        <article class="panel__wrapper">
+            <div class="panel__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="home-content">
+                                <div class="home-heading">
+                                    <h1><em>Skills</em>
+                                        <a id="a" class="typewrite" data-period="1000" data-type='[ "HTML, CSS","Javascript","PHP", "JAVA", "NodeJS", "MySQL" ]'>
+                                            <span class="wrap"></span>
+                                        </a>
+                                    </h1>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="home-box-content">
+                                            <div class="left-text">
+                                                <h4>Bem-vindo!</h4>
+                                                <p>Olá, meu nome é Carlos Floresta, sou desenvolvedor. Eu programo nas seguintes linguagens: JAVA, JAVASCRIPT, PHP, e NodeJS. Conheça um pouco mais do meu portfolio clicando aqui.</p>
+                                                <div>
+
+                                                    <a href="//github.com/carlosfloresta" target="_blank"> <img class="imagem02" src="img/Git.png" alt="Git" width=55 height=45></a>
+
+                                                    <a href="//www.linkedin.com/in/carlos-henrique-costa" target="_blank"> <img class="imagem02" src="img/link.png" alt="Link" width=55 height=45></a>
+
+                                                    <a target="blank" href="https://api.whatsapp.com/send?phone=5511955516719"> <img class="imagem02" src="img/whats.png" alt="Link" width=55 height=45></a>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="right-image">
+
+                                                <center>
+                                                    <div class="imagem"></div>
+                                                </center>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <script>
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                document.getElementById('burger').classList.remove('burger--active');
+                document.getElementById('nav_list').classList.remove('nav__list--active');
+            } else {
+                document.getElementById('burger').classList.add('burger--active');
+                document.getElementById('nav_list').classList.add('nav__list--active');
+            }
+        }
+
+        var x = window.matchMedia("(max-width: 900px)")
+        myFunction(x) // Call listener function at run time
+        x.addListener(myFunction) // Attach listener function on state changes
+    </script>
+
+    <script>
+        function setTheme(newTheme) {
+
+            document.getElementsByTagName('section')[0].setAttribute('data-theme', newTheme);
+            document.querySelector('.home-content').setAttribute('data-theme', newTheme);
+            document.querySelector('.home-content h1').setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+
+
+        }
+        const theme = localStorage.getItem('theme');
+        if (theme) {
+            setTheme(theme)
+        }
+
+
+
+
+
+
+
+
+
+        const darkModeToggle = document.querySelector('input[name=theme]');
+
+        darkModeToggle.addEventListener('change', function({
+            target
+        }) {
+            setTheme(target.checked ? 'light' : 'dark');
+            localStorage.setItem('check', target);
+
+        });
+
+        var check1statusStorage = localStorage.getItem("check");
+        if (check1statusStorage == 'true') {
+            document.getElementById("check").checked = true;
+        } else {
+            document.getElementById("check").checked = false;
+        }
+    </script>
+
+
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+
+    <script src="home/js/vendor/bootstrap.min.js"></script>
+
+    <script src="home/js/plugins.js"></script>
+    <script src="home/js/main.js"></script>
+
+
+</body>
+
+</html>
